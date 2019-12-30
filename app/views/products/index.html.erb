@@ -1,0 +1,30 @@
+<h1>Product List</h1>
+
+<%= form_tag products_path, :method => 'get' do  %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+
+<div id="products">
+  <% @products.each do |product| %>
+    <div class="product">
+      <h2><%= link_to product.name, product %></h2>
+      <div class="details">
+        <%= number_to_currency(product.price) %> |
+		<% if product.released_at? %>
+      	Released on <%= product.released_at.strftime("%B %e, %Y") %>
+      	 <% else %>
+      	 Comming Soon
+      	 <% end %>
+
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<p><%= link_to "New Product", new_product_path %></p>
+
+<%= will_paginate @products, previous_label: h("Previous"), next_label: h("Next") %>
