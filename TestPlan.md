@@ -9,28 +9,31 @@ This document describes the software test plan for the design, development, and 
 ### 1.1 Overall strategy
 
 Several testing strategies will be utilized, including:
-- Unit Testing of each of main component and will it be conducted by a team member other than the developer of the component to ensure segregation of duties*
-- Integration Testing of all components, and it will be overseen by the project manager to be designated. Overall accountabiltiy of this test rest with the project manager, this person will utilize the team members to execute some test procedures* 
-- System Testing will be conducted*
-- User Acceptance Testing, to be performed by other member of the team excluding the project manager* 
+
+Unit Testing of each of main component and it will be conducted by a team member other than the developer of the component to ensure segregation of duties*
+
+Integration Testing of all components, and it will be overseen by the project manager. Overall accountabiltiy of this test rest with the project manager, this person will utilize the team members to execute some test procedures* 
+
+System Testing will be conducted, by the project manager
+
+User Acceptance Testing, to be performed by other member of the team excluding the project manager* 
 
 
 
 ### 1.2 Test Selection
 
-  - White-box technique will be utilized for test cases pertaining to Unit Testing and Integration Testing.
-  - Black-box techniques will be utilized for test cases related to System Testing and User Acceptance Testing.
+White-box technique will be utilized for test cases pertaining to Unit Testing and Integration Testing.
 
+Black-box techniques will be utilized for test cases related to System Testing and User Acceptance Testing.
 
 
 ### 1.3 Adequacy Criterion
 
 
-Functional coverage will be assessed for system and user acceptance testing while sttructural coverage will be assessed during unit and integration testing.
+Functional coverage will be assessed for System and User Acceptance testing while structural coverage will be assessed during unit and integration testing.
 
-The standards of quality includes software that is reasonably bug-free, meets functional requirements specifications and its maintainable.
+It is expected that prior to production deployment, the application will be bug-free and meet functional requirements specifications.
 
-*Define how you are going to assess the quality of your test cases. Typically, this involves some form of functional or structural coverage. If you plan to use different techniques at different testing levels (e.g., unit and system), you should clarify that.*
 
 ### 1.4 Bug Tracking
 
@@ -42,6 +45,7 @@ Defects identified during testing  will be logged and tracked in Defects Trackin
 JUnit, a java-based unit testing framework, will be utilized for unit and integration testing
 
 Android Emulators will be utilized for system and user acceptance testing. 
+
 
 ## 2 Test Cases
 
